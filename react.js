@@ -1,4 +1,4 @@
-var Elm = require('dist/elm/main.js');
+var Elm = require('./dist/elm/main.js');
 var React = require('react');
 var createReactClass = require('create-react-class');
 
