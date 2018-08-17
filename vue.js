@@ -1,4 +1,4 @@
-var Elm = require('dist/elm/main.js');
+var Elm = require('./dist/elm/main.js');
 var Vue = require('vue');
 
 Vue.component('ElmComponent', {
