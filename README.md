@@ -2,10 +2,11 @@
 
 Would you like to try out Elm in an existing project? A full rewrite is too risky? **Just embed a little Elm node and see how it goes.** You can grow it or revert if depending on how it goes. No big deal either way!
 
+<br>
 
-## Starters
+## Embed an Elm program
 
-The following code shows how to embed Elm programs in many of the popular JS frameworks. Just copy the relevant code into your project and go from there:
+The following code shows how to embed an Elm program in some of the most popular JS frameworks. Just copy the relevant code into your project and go from there:
 
 - [React](react.js)
 - [Vue](vue.js)
