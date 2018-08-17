@@ -1,4 +1,7 @@
-Vue.component('ElmCounter', {
+var Elm = require('dist/elm/main.js');
+var Vue = require('vue');
+
+Vue.component('ElmComponent', {
   template: `<div ref="node"></div>`,
   mounted () {
     Elm.Main.init({
@@ -6,5 +9,5 @@ Vue.component('ElmCounter', {
     })
   }
 })
-// Here is a repo that uses this example:
-// https://github.com/ryannhg/elm-vue
+
+// Check out https://github.com/ryannhg/elm-vue for a full example!
