@@ -7,11 +7,8 @@ module.exports = createReactClass({
 		return React.createElement('div', { ref: this.initialize });
 	},
 	initialize: function(node) {
-		var app = Elm.Main.init({
-			node: node,
-			flags: this.props.flags
-		});
-		if (this.props.ports) this.props.ports(app.ports);
+		var app = Elm.Main.init({ node: node });
+		// set up ports however you want
 	},
 	shouldComponentUpdate: function(prevProps) {
 		return false;
