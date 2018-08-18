@@ -11,6 +11,7 @@ The following code shows how to embed an Elm program in some of the most popular
 - [Angular 2+](angular.ts)
 - [React](react.js)
 - [Vue](vue.js)
+- [`customElement`](custom-element.js)
 
 **To edit these snippets,** read [the chapter on JavaScript interop](https://guide.elm-lang.org/interop/) in the official guide. It is easy to send messages back and forth between Elm and JavaScript, and the guide will give you the confidence to start trying that out.
 
