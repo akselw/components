@@ -8,6 +8,7 @@ Would you like to try out Elm in an existing project? A full rewrite is too risk
 
 The following code shows how to embed an Elm program in some of the most popular JS frameworks. Just copy the relevant code into your project and go from there:
 
+- [Angular 2+](angular.ts)
 - [React](react.js)
 - [Vue](vue.js)
 
