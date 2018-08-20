@@ -1,16 +1,24 @@
-var Elm = require('./dist/elm/main.js');
-var React = require('react');
-var createReactClass = require('create-react-class');
+import React from 'react';
+import Elm from './dist/elm/main.js';
 
-module.exports = createReactClass({
-	render: function () {
-		return React.createElement('div', { ref: this.initialize });
-	},
-	initialize: function(node) {
-		var app = Elm.Main.init({ node: node });
-		// set up ports however you want
-	},
-	shouldComponentUpdate: function(prevProps) {
-		return false;
-	}
-});
+class ElmComponent extends React.Component {
+    constructor(props) {
+        super(props);
+        this.nodeRef = React.createRef();
+    }
+
+    componentDidMount() {
+        const app = Elm.Main.init({ node: this.nodeRef.current })
+        // set up ports however you want
+    }
+
+    shouldComponentUpdate() {
+        return false;
+    }
+
+    render() {
+        return <div ref={this.nodeRef}/>;
+    }
+}
+
+export default ElmComponent;
