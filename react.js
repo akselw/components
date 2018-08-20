@@ -1,5 +1,5 @@
 import React from 'react';
-import Elm from './dist/elm/main.js';
+import { Elm } from './dist/elm/main.js';
 
 class ElmComponent extends React.Component {
     constructor(props) {
